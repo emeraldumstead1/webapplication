@@ -24,3 +24,22 @@ app_config = {
     'development': Development,
     'production': Production,
 }
+
+#####################
+ # existing code here#
+ #####################
+ class Testing(object):
+    """
+    Development environment configuration
+    """
+    TESTING = True
+    JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_TEST_URL')
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
+
+ app_config = {
+  #####################
+    # existing code here#
+    #####################
+    'testing': Testing
+ }
