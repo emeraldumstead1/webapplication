@@ -1,0 +1,20 @@
+blog_api/
+  |-src
+    	|- __init__.py
+        |- shared
+            |- __init__.py
+            |- Authentication.py
+    	|- models
+            |- __init__.py
+            |- UserModel.py
+            |- BlogpostModel.py
+        |- views
+            |- __init__.py
+            |- UserView.py
+            |- BlogpostView.py
+        |- app.py
+        |- config.py
+    |- manage.py
+    |- run.py
+    |- Pipfile
+    |- Pipfile.lock
